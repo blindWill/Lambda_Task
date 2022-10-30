@@ -26,21 +26,21 @@ public class Phone {
     public double getDiscountPrice() {
         return discountPrice;
     }
-    public void setDiscountPrice(String season) {
+    public void setDiscountPrice(Seasons season) {
         switch (season){
-            case "Winter":{
+            case Winter:{
                 discountPrice = getSeasonPrice((price)-> price - 100);
                 break;
             }
-            case "Spring":{
+            case Spring:{
                 discountPrice =  getSeasonPrice((price)-> price * 0.9);
                 break;
             }
-            case "Summer":{
+            case Summer:{
                 discountPrice =  getSeasonPrice((price)-> (price * 0.9) - 100);
                 break;
             }
-            case "Autumn":{
+            case Autumn:{
                 discountPrice =  getSeasonPrice((price)-> price - 150);
                 break;
             }
